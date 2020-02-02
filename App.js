@@ -1,11 +1,19 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, {useState, useEffect} from 'react';
+import { StyleSheet, Text, View, Button } from 'react-native';
 
 export default function App() {
+
+const [resposta, setResposta] = useState('');
+
+function MostrarResposta(){
+  setResposta('How I Met Your Mother');
+}
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <Text>foda-se</Text>
+      <Text>Qual a série que Joana ama?</Text>
+      <Button onPress={MostrarResposta} title="Ver resposta"/>
+      <Text>{resposta}</Text>
     </View>
   );
 }

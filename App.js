@@ -3,17 +3,10 @@ import { StyleSheet, Text, View, Button } from 'react-native';
 
 export default function App() {
 
-const [resposta, setResposta] = useState('');
-
-function MostrarResposta(){
-  setResposta('How I Met Your Mother');
-}
-
   return (
     <View style={styles.container}>
-      <Text>Qual a série que Joana ama?</Text>
-      <Button onPress={MostrarResposta} title="Ver resposta"/>
-      <Text>{resposta}</Text>
+      <Text>App</Text>
+      <Text>React Native with Expo</Text>
     </View>
   );
 }

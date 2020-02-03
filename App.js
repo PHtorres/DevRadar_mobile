@@ -1,21 +1,9 @@
-import React, {useState, useEffect} from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import React from 'react';
+import Routes from './src/routes';
 
 export default function App() {
 
   return (
-    <View style={styles.container}>
-      <Text>App</Text>
-      <Text>React Native with Expo</Text>
-    </View>
+    <Routes />
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

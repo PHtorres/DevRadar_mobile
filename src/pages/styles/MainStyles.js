@@ -8,8 +8,8 @@ const styles = StyleSheet.create({
     avatar: {
         width: 54,
         height: 54,
-        borderRadius: 4,
-        borderWidth: 4,
+        borderRadius: 27,
+        borderWidth: 3,
         borderColor: '#7D40E7'
     },
     callout: {

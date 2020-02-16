@@ -51,13 +51,15 @@ function Main({ navigation }) {
     async function loadDevs() {
         const { latitude, longitude } = regiaoCorrente;
 
-        const response = await api.get('search', {
+        const response = await api.get('/search', {
             params: {
                 latitude,
                 longitude,
                 techs
             }
         });
+
+        console.log(response);
 
         setDevs(response.data);
         setupWebsocket();
